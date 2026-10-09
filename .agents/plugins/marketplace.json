@@ -1,0 +1,21 @@
+{
+  "name": "forward-if",
+  "interface": {
+    "displayName": "Forward?"
+  },
+  "plugins": [
+    {
+      "name": "forward-if",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/antiiii/forward-if.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

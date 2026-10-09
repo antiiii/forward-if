@@ -1,0 +1,7 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "forward-if",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Intelligent disobedience for AI agents: preserve the destination while revising a route that no longer fits reality."
+}

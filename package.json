@@ -1,0 +1,41 @@
+{
+  "name": "forward-if",
+  "version": "0.1.0",
+  "description": "Install the Forward? Agent Skill across Codex, Claude Code, and Gemini CLI.",
+  "type": "module",
+  "bin": {
+    "forward-if": "bin/forward-if.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "skills/forward/SKILL.md",
+    "plugin.json",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "docs/philosophy.md",
+    "docs/evaluation.md",
+    "docs/known-limitations.md",
+    "docs/platform-support.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test tests/cli.test.js tests/installer.test.js tests/package.test.js",
+    "validate": "node scripts/validate-release.mjs",
+    "prepublishOnly": "npm test && npm run validate"
+  },
+  "keywords": [
+    "agent-skills",
+    "ai-agents",
+    "codex",
+    "claude-code",
+    "gemini-cli"
+  ]
+}

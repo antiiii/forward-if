@@ -1,0 +1,46 @@
+# Local research and benchmark work stay in the checkout, outside the public v0.1 surface.
+.agent-traces/
+.serena/
+.codegraph/
+results/
+cases/
+containers/
+{run_artifact_dir}/
+skills/forward-v2/
+scripts/
+docs/review/
+docs/phase*.md
+docs/forward-benchmark*
+docs/forward_case_authoring*
+docs/forward-case-authoring*
+docs/iteration-board.md
+docs/forward_benchmark_v1.docx
+docs/forward_benchmark-v1.docx
+
+# Preserve only the curated public smoke documentation under evals/.
+evals/**
+!evals/README.md
+!evals/smoke/
+!evals/smoke/**
+
+.DS_Store
+__pycache__/
+*.py[cod]
+node_modules/
+coverage/
+dist/
+*.tgz
+npm-debug.log*
+.forward-if/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Release checks only; the pre-existing research harness remains local.
+scripts/**
+!scripts/
+!scripts/validate-release.mjs
+tests/**
+!tests/*.test.js
